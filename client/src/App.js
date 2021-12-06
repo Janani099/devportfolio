@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import PrivateRoute from './components/common/PrivateRoute';
-
+import Contactus from './components/contact/Contactus';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
@@ -91,7 +91,7 @@ class App extends Component {
                   component={AddEducation}
                 />
               </Switch>
-            
+              <Route exact path = "/contactus" component = {Contactus} />
               <Route exact path="/not-found" component={NotFound} />
             </div>
             <Footer />

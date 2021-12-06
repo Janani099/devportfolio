@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
 import { clearCurrentProfile } from '../../actions/profileActions';
+import { AiFillFunnelPlot} from "react-icons/ai";
+import './Navbar.css';
 
 class Navbar extends Component {
   onLogoutClick(e) {
@@ -36,7 +38,7 @@ class Navbar extends Component {
               style={{ width: '25px', marginRight: '5px' }}
               title="You must have a Gravatar connected to your email to display an image"
             />{' '}
-            Logout
+            Sign out
           </a>
         </li>
       </ul>
@@ -51,7 +53,7 @@ class Navbar extends Component {
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/login">
-            Login
+            Sign in
           </Link>
         </li>
       </ul>
@@ -60,8 +62,9 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
+        <h1 className="logo"><AiFillFunnelPlot />Port<span>folio</span></h1>
           <Link className="navbar-brand" to="/">
-            DevConnector
+            Home
           </Link>
           <button
             className="navbar-toggler"
@@ -78,6 +81,13 @@ class Navbar extends Component {
                 <Link className="nav-link" to="/profiles">
                   {' '}
                   Developers
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to="/contactus">
+                  {' '}
+                  Contact Us
                 </Link>
               </li>
             </ul>
