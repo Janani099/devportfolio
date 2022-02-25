@@ -34,7 +34,7 @@ setTimeout(() => {
     <div className="contactus">
     <div className = "container">
       <div className = "row">
-        <div className = "col.md-8 m-auto">
+        <div className = "col-md-8 m-auto">
           <h1 className = "label">Contact Us</h1>
           <hr />
           <p className = "content">Get in Touch</p>
